@@ -79,21 +79,21 @@
   </ItemDefinitionGroup>
 
   <ItemGroup>
-    <ClCompile Include="..\..\Core\Lib\Common\DateTimeFormat.cpp" />
-    <ClCompile Include="..\..\Core\Lib\Common\ErrorDetectionCode.cpp" />
-    <ClCompile Include="..\..\Core\Lib\Common\TextParser.cpp" />
-    <ClCompile Include="..\..\Core\Lib\Document\DocumentFile.cpp" />
-    <ClCompile Include="..\..\Core\Lib\Document\ScoreDocument.cpp" />
-    <ClCompile Include="..\..\Core\Lib\Downloader\HtmlDownloader.cpp" />
+    <ClCompile Include="..\Core\Lib\Common\DateTimeFormat.cpp" />
+    <ClCompile Include="..\Core\Lib\Common\ErrorDetectionCode.cpp" />
+    <ClCompile Include="..\Core\Lib\Common\TextParser.cpp" />
+    <ClCompile Include="..\Core\Lib\Document\DocumentFile.cpp" />
+    <ClCompile Include="..\Core\Lib\Document\ScoreDocument.cpp" />
+    <ClCompile Include="..\Core\Lib\Downloader\HtmlDownloader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Core\Include\Score4Core\Common\DateTimeFormat.h" />
-    <ClInclude Include="..\..\Core\Include\Score4Core\Common\ErrorDetectionCode.h" />
-    <ClInclude Include="..\..\Core\Include\Score4Core\Common\Score4CoreSettings.h" />
-    <ClInclude Include="..\..\Core\Include\Score4Core\Common\Score4Types.h" />
-    <ClInclude Include="..\..\Core\Include\Score4Core\Document\DocumentFile.h" />
-    <ClInclude Include="..\..\Core\Include\Score4Core\Document\ScoreDocument.h" />
-    <ClInclude Include="..\..\Core\Include\Score4Core\Downloader\HtmlDownloader.h" />
+    <ClInclude Include="..\Core\Include\Score4Core\Common\DateTimeFormat.h" />
+    <ClInclude Include="..\Core\Include\Score4Core\Common\ErrorDetectionCode.h" />
+    <ClInclude Include="..\Core\Include\Score4Core\Common\Score4CoreSettings.h" />
+    <ClInclude Include="..\Core\Include\Score4Core\Common\Score4Types.h" />
+    <ClInclude Include="..\Core\Include\Score4Core\Document\DocumentFile.h" />
+    <ClInclude Include="..\Core\Include\Score4Core\Document\ScoreDocument.h" />
+    <ClInclude Include="..\Core\Include\Score4Core\Downloader\HtmlDownloader.h" />
   </ItemGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
