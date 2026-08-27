@@ -1,15 +1,9 @@
 
-name: CMake
+name : CI for CMake
 
-on:
-  push:
-    branches: [ "master", "develop" ]
-  pull_request:
-    branches: [ "master", "develop" ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
+jobs :
+  build :
+    runs-on : ubuntu-latest
 
     strategy :
       fail-fast : false
@@ -18,42 +12,49 @@ jobs:
         build-type   : [ Release, Debug ]
         with-cppunit : [ no, tools/cppunit ]
 
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: 'true'
+    steps :
+      - name : Checkout
+        uses : actions/checkout@v7
+        with :
+          submodules : recursive
 
       - name : Install CppUnit
         id   : install-cppunit
-        uses : takahiro-itou/install-cppunit-action@v1.1.0
+        uses : takahiro-itou/install-cppunit-action@v1.1.1
         with :
           install-prefix : "${{ matrix.with-cppunit }}"
 
-      - name: Run bootstrap
-        run : |
+      - name : Run bootstrap
+        run  : |
           pwd
-          cd Core
           autoconf --version
           ./bootstrap.sh
           ls -aR
 
-      - name: Configure CMake
-        run : |
+      - name : Configure CMake
+        run  : |
           cmake --version
           cmake -B "${{ github.workspace }}/build"  \
             -DCMAKE_BUILD_TYPE=${{ matrix.build-type }}  \
             -DCPPUNIT_DIR=${{ steps.install-cppunit.outputs.real-install-dir }} \
-            -S Core
+            -S .
         shell : bash
 
-      - name: Build
-        run : |
+      - name : Build
+        run  : |
           cmake --build "${{ github.workspace }}/build"  \
           --config ${{ matrix.build-type }}
         shell : bash
 
-      - name: Run Test
-        run : |
+      - name : Run Test
+        run  : |
           ctest --build-config "${{ matrix.build-type }}"  \
             --test-dir $"${{ github.workspace }}/build"
         shell : bash
+
+on :
+  push :
+    branches : [ "master", "develop" ]
+  pull_request :
+    branches : [ "master", "develop" ]
+  workflow_dispatch :
