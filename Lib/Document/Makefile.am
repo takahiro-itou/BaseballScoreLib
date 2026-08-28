@@ -7,8 +7,8 @@
 ##    List of Directories.
 ##
 
-module_dir_name         =  Document
-SUBDIRS                 =  .  Tests
+module_dir_name     =  Document
+SUBDIRS             =  .  Tests
 
 include  $(top_srcdir)/.M4/BuildCommon/DirList.inc
 include  $(top_srcdir)/.M4/BuildCommon/DefVars.inc
@@ -31,7 +31,6 @@ library_instantiations      +=
 library_inline_files        +=
 
 dist_noinst_data_files      +=  \
-        CMakeLists.txt              \
         ${extra_noinst_data_files}
 
 dist_noinst_header_files    +=  \
@@ -55,21 +54,12 @@ library_compile_srcfiles    +=  \
 ##    List of Libraries.
 ##
 
-static_libraries_list   =  libscore4Document.static.a
-shared_libraries_list   =
+static_libraries_list   +=  libscore4Document.static.a
+shared_libraries_list   +=
 
 ##
 ##    Internal Libraries.
 ##
-
-##
-##    Compile and Link Options.
-##
-
-AM_CPPFLAGS          =  \
-        -I${INCTOP_SOURCE_DIR}
-AM_CFLAGS               =
-AM_CXXFLAGS             =
 
 ##
 ##    Include Common Install Settings.
