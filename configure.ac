@@ -1,5 +1,5 @@
 
-dnl----------------------------------------------------------------
+dnl ----------------------------------------------------------------
 dnl
 dnl   Package Configurations.
 dnl   パッケージ設定。
@@ -28,12 +28,19 @@ dnl
 AC_CONFIG_AUX_DIR([.Config])
 
 dnl
+dnl   ターゲットシステムを判定
+dnl
+
+m4_include([.M4/TargetSystem.m4])
+
+dnl
 dnl   適当なバージョンの automake を設定
 dnl
 
 m4_include([.M4/InitAutoMake.m4])
 
-dnl----------------------------------------------------------------
+
+dnl ----------------------------------------------------------------
 dnl
 dnl   プロジェクトの基本設定。
 dnl
@@ -42,33 +49,10 @@ AC_CONFIG_SRCDIR([Makefile.am])
 AC_LANG([C++])
 
 dnl
-dnl   デフォルトのコンパイルオプション
+dnl   デフォルトのビルドオプション
 dnl
 
-myac_build_type=${AUTOMAKE_BUILD_TYPE:-'Debug'}
-
-myac_cxx_warning_flags='-Wall -Weffc++'
-myac_c_warning_flags='-Wall'
-
-myac_cxxflags_debug='-O0 -g -D_DEBUG'
-myac_cflags_debug='-O0 -g -D_DEBUG'
-
-myac_cxxflags_release='-O3 -g -DNDEBUG'
-myac_cflags_release='-O3 -g -DNDEBUG'
-
-myac_saved_CXXFLAGS=${CXXFLAGS:-''}
-myac_saved_CFLAGS=${CFLAGS:-''}
-
-if test "X${myac_build_type}Y" = "XDebugY" ; then
-    myac_cxxflags="${myac_cxxflags_debug}   ${myac_saved_CXXFLAGS}"
-    myac_cflags="${myac_cflags_debug}   ${myac_saved_CFLAGS}"
-else
-    myac_cxxflags="${myac_cxxflags_release} ${myac_saved_CXXFLAGS}"
-    myac_cflags="${myac_cflags_release} ${myac_saved_CFLAGS}"
-fi
-
-CXXFLAGS="${myac_cxxflags} ${myac_cxx_warning_flags}"
-CFLAGS="${myac_cflags} ${myac_c_warning_flags}"
+m4_include([.M4/DefaultBuildOptions.m4])
 
 dnl
 dnl   Project Name Space.
@@ -77,19 +61,21 @@ dnl
 SCORE4CORE_CNF_NAMESPACE=Score4Core
 AC_SUBST(SCORE4CORE_CNF_NAMESPACE)
 
-dnl----------------------------------------------------------------
+
+dnl ----------------------------------------------------------------
 dnl
 dnl   ディレクトリ名。
 dnl
 
 m4_include([.M4/ConfigDirectory.m4])
 
-MYAC_CUSTOMIZE_LIBRARY_DIR([Lib])
-MYAC_CUSTOMIZE_BINARY_DIR([Bin])
-MYAC_CUSTOMIZE_INCLUDE_DIR(
+myac_customize_library_dir([Lib])
+myac_customize_binary_dir([Bin])
+myac_customize_include_dir(
     [Include], [BaseballScore], [.Config], [Config.h])
 
-dnl----------------------------------------------------------------
+
+dnl ----------------------------------------------------------------
 dnl
 dnl   ビルド環境の検査。
 dnl
@@ -119,25 +105,28 @@ dnl
 dnl   Check Extra Compiler/Linker Options.
 dnl
 
-m4_include([.M4/CheckExtraFlags.m4])
+m4_include([.M4/Checks/CheckExtraFlags.m4])
+m4_include([.M4/Checks/EnableCxx11.m4])
 
-m4_include([.M4/EnableCxx11.m4])
+m4_include([.M4/Checks/ConstExpr.m4])
+m4_include([.M4/Checks/NullPtr.m4])
+m4_include([.M4/Checks/Override.m4])
+m4_include([.M4/Checks/StaticAssert.m4])
+m4_include([.M4/Checks/RightValueReference.m4])
+m4_include([.M4/Checks/DefaultDeclarations.m4])
 
-m4_include([.M4/CheckConstExpr.m4])
-m4_include([.M4/CheckNullPtr.m4])
-m4_include([.M4/CheckOverride.m4])
 
-dnl----------------------------------------------------------------
+dnl ----------------------------------------------------------------
 dnl
 dnl   Additional Packages.
 dnl   外部パッケージの追加
 dnl
 
-m4_include([.M4/WithExtPkgs.m4])
-
+m4_include([.M4/Packages/WithExtPkgs.m4])
 m4_include([.M4/Packages/CppUnit.m4])
 
-dnl----------------------------------------------------------------
+
+dnl ----------------------------------------------------------------
 dnl
 dnl   Linker Scripts.
 dnl   リンカスクリプトを生成する。
@@ -145,20 +134,26 @@ dnl
 
 m4_include([Lib/.LinkerScript/LinkerScripts.m4])
 
-dnl----------------------------------------------------------------
+
+dnl ----------------------------------------------------------------
 dnl
 dnl   Outputs.
 dnl   出力ファイルを設定する。
 dnl
 
 dnl
+dnl   Common Features in Sub Repository.
+dnl
+
+m4_include([.CMake/GenConfigFiles.m4])
+m4_include([.M4/GenConfigFiles.m4])
+m4_include([Lib/Tests/GenConfigFiles.m4])
+
+dnl
 dnl   Basic Features.
 dnl
 
 AC_CONFIG_FILES([
-    .CMake/Makefile
-    .CMake/Modules/Makefile
-    .M4/Makefile
     Makefile
     Bin/Makefile
     Lib/Makefile
@@ -166,6 +161,7 @@ AC_CONFIG_FILES([
     Lib/Common/Makefile
     Lib/Document/Makefile
     Lib/Downloader/Makefile
+    Lib/Pch/Makefile
 ])
 
 AC_CONFIG_FILES([
