@@ -15,7 +15,7 @@ cmake_minimum_required(VERSION  3.0.2)
 ##    パッケージの情報を指定する。
 ##
 
-set(PROJECT_NAME        Score4Core)
+set(PROJECT_NAME        BaseballScore)
 set(serial              "0.0.0")
 
 project(${PROJECT_NAME}     VERSION  1.0.0)
