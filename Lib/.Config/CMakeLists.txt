@@ -4,23 +4,24 @@
 ##    モジュールの設定。
 ##
 
-Set (MODULE_DIR_NAME       ".Config")
-Set (MODULE_OUTPUT_NAME    "Config")
-Set (MODULE_TITLE          "Config")
+set(module_title        "Config")
 
-Set (INCLIB_SOURCE_DIR     "${INCLUDE_SOURCE_DIR}/${MODULE_DIR_NAME}")
-Set (INCLIB_BINARY_DIR     "${INCLUDE_BINARY_DIR}/${MODULE_DIR_NAME}")
+Include (${common_cmake_dir}/BuildCommon/ConfigModule.cmake)
+Include (${common_cmake_dir}/BuildCommon/ConfigTarget.cmake)
 
 ##----------------------------------------------------------------
 ##
 ##    ソースファイルとヘッダファイルのリスト。
 ##
 
-Set (LIBRARY_SOURCE_FILES
+set(library_source_files
 )
 
-Set (INCLIB_HEADER_FILES
-        ${INCLIB_BINARY_DIR}/ConfiguredScore4Core.h
+set(inclib_header_files
+        ${inclib_binary_dir}/ConfiguredScore4Core.h
+)
+
+set(module_needs_libraries
 )
 
 ##----------------------------------------------------------------
@@ -28,5 +29,13 @@ Set (INCLIB_HEADER_FILES
 ##    ビルドとインストールの設定。
 ##
 
-Include (${COMMON_CMAKE_DIR}/BuildLibraryCommon.cmake)
+Include (${common_cmake_dir}/BuildCommon/BuildLib.cmake)
+Include (${common_cmake_dir}/BuildCommon/Install.cmake)
+
+##----------------------------------------------------------------
+##
+##    テストの設定。
+##
+
+Add_SubDirectory (Tests)
 
