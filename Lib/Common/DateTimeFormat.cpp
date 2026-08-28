@@ -27,6 +27,7 @@
 #include    <sstream>
 #include    <stdint.h>
 
+
 BASEBALLSCORE_NAMESPACE_BEGIN
 namespace  Common  {
 
