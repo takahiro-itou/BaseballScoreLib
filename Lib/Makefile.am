@@ -5,7 +5,7 @@
 
 SUBLIBS                 =  Common  Downloader  Document
 
-SUBDIRS                 =  Tests  .Config  $(SUBLIBS)  .
+SUBDIRS                 =  Pch  Tests  .Config  $(SUBLIBS)  .
 
 ##
 ##    List of Installs.

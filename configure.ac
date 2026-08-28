@@ -176,7 +176,6 @@ AC_CONFIG_FILES([
     Lib/Common/Tests/Makefile
     Lib/Document/Tests/Makefile
     Lib/Downloader/Tests/Makefile
-    Lib/Tests/Makefile
 ])
 
 dnl
