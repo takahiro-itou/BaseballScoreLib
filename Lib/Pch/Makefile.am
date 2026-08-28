@@ -7,8 +7,7 @@
 ##    List of Directories.
 ##
 
-module_dir_name     =  .Config
-SUBDIRS             =  .
+module_dir_name     =  Pch
 
 include  $(top_srcdir)/.M4/BuildCommon/DirList.inc
 include  $(top_srcdir)/.M4/BuildCommon/DefVars.inc
@@ -23,24 +22,23 @@ extra_noinst_data_files     =
 extra_noinst_header_files   =
 
 library_source_files        +=  \
+        PreCompile.cpp                 \
         ${extra_library_source_files}
 
 library_instantiations      +=
 library_inline_files        +=
 
 dist_noinst_data_files      +=  \
-        CMakeLists.txt              \
-        ${inclib_source_dir}/Config.h.cmake.in  \
         ${extra_noinst_data_files}
 
 dist_noinst_header_files    +=  \
         ${extra_noinst_header_files}
 
 inclib_header_files         +=  \
+        ${inclib_source_dir}/PreCompile.h      \
         ${extra_library_header_files}
 
-inclib_nodist_header_files  +=  \
-        ${inclib_binary_dir}/ConfiguredScore4Core.h
+inclib_nodist_header_files  +=
 
 library_install_srcfiles    +=  \
         ${library_inline_files}
@@ -69,3 +67,4 @@ include  $(top_srcdir)/.M4/BuildCommon/Install.inc
 ##
 ##    Build Libraries.
 ##
+

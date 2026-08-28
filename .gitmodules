@@ -1,6 +1,9 @@
 [submodule "Core/.M4"]
 	path = .M4
-	url = ../InitM4.git
+	url  = ../InitM4.git
 [submodule "Core/.CMake"]
 	path = .CMake
-	url = ../InitCMake.git
+	url  = ../InitCMake.git
+[submodule "Lib/Tests"]
+	path = Lib/Tests
+	url  = ../CppUnitDriver.git

@@ -4,7 +4,7 @@
 ##    モジュールの設定。
 ##
 
-set(module_title        "Document")
+set(module_title        "Pch")
 
 Include (${common_cmake_dir}/BuildCommon/ConfigModule.cmake)
 Include (${common_cmake_dir}/BuildCommon/ConfigTarget.cmake)
@@ -15,17 +15,11 @@ Include (${common_cmake_dir}/BuildCommon/ConfigTarget.cmake)
 ##
 
 set(library_source_files
-        DocumentFile.cpp
-        ScoreDocument.cpp
+       PreCompile.cpp
 )
 
 set(inclib_header_files
-        ${inclib_source_dir}/DocumentFile.h
-        ${inclib_source_dir}/ScoreDocument.h
-)
-
-set(module_needs_libraries
-        ${project_target_prefix}Downloader
+        ${inclib_source_dir}/PreCompile.h
 )
 
 ##----------------------------------------------------------------
@@ -40,6 +34,3 @@ Include (${common_cmake_dir}/BuildCommon/Install.cmake)
 ##
 ##    テストの設定。
 ##
-
-Add_SubDirectory (Tests)
-

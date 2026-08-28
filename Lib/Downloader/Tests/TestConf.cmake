@@ -4,7 +4,7 @@
 ##    テストの設定。
 ##
 
-Add_Test (NAME  HtmlDownloaderTest
+add_test(NAME   HtmlDownloaderTest
     COMMAND  $<TARGET_FILE:HtmlDownloaderTest>
 )
 
@@ -13,5 +13,5 @@ Add_Test (NAME  HtmlDownloaderTest
 ##    テストプログラムのビルド。
 ##
 
-Add_Executable (HtmlDownloaderTest      HtmlDownloaderTest.cpp)
+add_executable(HtmlDownloaderTest       HtmlDownloaderTest.cpp)
 

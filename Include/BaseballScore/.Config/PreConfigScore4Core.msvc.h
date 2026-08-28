@@ -1,10 +1,14 @@
 ﻿//  -*-  coding: utf-8-with-signature;  mode: c++  -*-  //
 /*************************************************************************
 **                                                                      **
-**                  ---  The Score4 Core Library.  ---                  **
+**                  ---  Baseball  Score  Project  ---                  **
 **                                                                      **
-**          Copyright (C), 2017-2018, Takahiro Itou                     **
+**          Copyright (C), 2017-2026, Takahiro Itou                     **
 **          All Rights Reserved.                                        **
+**                                                                      **
+**          License: (See COPYING or LICENSE files)                     **
+**          GNU Affero General Public License (AGPL) version 3,         **
+**          or (at your option) any later version.                      **
 **                                                                      **
 *************************************************************************/
 
@@ -14,8 +18,8 @@
 **      @file       .Config/ConfiguredScore4Core.h.in
 **/
 
-#if !defined( SCORE4CORE_CONFIG_INCLUDED_CONFIGURED_SCORE4_CORE_H )
-#    define   SCORE4CORE_CONFIG_INCLUDED_CONFIGURED_SCORE4_CORE_H
+#if !defined( BASEBALLSCORE_CONFIG_INCLUDED_CONFIGURED_SCORE4_CORE_H )
+#    define   BASEBALLSCORE_CONFIG_INCLUDED_CONFIGURED_SCORE4_CORE_H
 
 //========================================================================
 //
@@ -27,16 +31,20 @@
 **/
 
 #define     SCORE4_CORE_CNF_NS              Score4Core
+#define     BASEBALLSCORE_CNF_NS            Score4Core
 
 /**
 **    名前空間。
 **/
 
 #define     SCORE4_CORE_NAMESPACE           SCORE4_CORE_CNF_NS
+#define     BASEBALLSCORE_NAMESPACE         BASEBALLSCORE_LIB_CNF_NS
 
 #define     SCORE4_CORE_NAMESPACE_BEGIN     namespace  SCORE4_CORE_CNF_NS  {
+#define     BASEBALLSCORE_NAMESPACE_BEGIN   namespace  SCORE4_CORE_CNF_NS  {
 
 #define     SCORE4_CORE_NAMESPACE_END       }
+#define     BASEBALLSCORE_NAMESPACE_END     }
 
 
 //========================================================================
