@@ -1,13 +1,13 @@
 ﻿//  -*-  coding: utf-8-with-signature;  mode: c++  -*-  //
 /*************************************************************************
 **                                                                      **
-**                  ---  The Score4 Core Library.  ---                  **
+**                  ---  Baseball  Score  Project  ---                  **
 **                                                                      **
-**          Copyright (C), 2017-2020, Takahiro Itou                     **
+**          Copyright (C), 2017-2026, Takahiro Itou                     **
 **          All Rights Reserved.                                        **
 **                                                                      **
-**          License: (See COPYING and LICENSE files)                    **
-**          GNU General Public License (GPL) version 3,                 **
+**          License: (See COPYING or LICENSE files)                     **
+**          GNU Affero General Public License (AGPL) version 3,         **
 **          or (at your option) any later version.                      **
 **                                                                      **
 *************************************************************************/
@@ -18,12 +18,13 @@
 **      @file       Downloader/HtmlDownloader.h
 **/
 
-#if !defined( SCORE4CORE_DOWNLOADER_INCLUDED_HTML_DOWNLOADER_H )
-#    define   SCORE4CORE_DOWNLOADER_INCLUDED_HTML_DOWNLOADER_H
+#if !defined( BASEBALLSCORE_DOWNLOADER_INCLUDED_HTML_DOWNLOADER_H )
+#    define   BASEBALLSCORE_DOWNLOADER_INCLUDED_HTML_DOWNLOADER_H
 
-#include    "Score4Core/Common/Score4Types.h"
+#include    "BaseballScore/Common/Score4Types.h"
 
-SCORE4_CORE_NAMESPACE_BEGIN
+
+BASEBALLSCORE_NAMESPACE_BEGIN
 
 //  クラスの前方宣言。  //
 namespace  Common  {
@@ -183,6 +184,6 @@ public:
 };
 
 }   //  End of namespace  Downloader
-SCORE4_CORE_NAMESPACE_END
+BASEBALLSCORE_NAMESPACE_END
 
 #endif
