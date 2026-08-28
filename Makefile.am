@@ -11,6 +11,6 @@ DIST_SUBDIRS    =  .M4  .CMake  $(SUBDIRS)
 ##
 
 dist_noinst_DATA        =  \
-        Score4CoreConfig.cmake.in  \
+        BaseballScoreConfig.cmake.in    \
         CMakeLists.txt
 
