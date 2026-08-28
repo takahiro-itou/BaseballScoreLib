@@ -7,55 +7,56 @@
 ##    List of Directories.
 ##
 
-MODULE_DIR_NAME         =  Document
+module_dir_name         =  Document
 SUBDIRS                 =  .  Tests
 
-include  $(top_srcdir)/.M4/Makefile.DirList.inc
+include  $(top_srcdir)/.M4/BuildCommon/DirList.inc
+include  $(top_srcdir)/.M4/BuildCommon/DefVars.inc
 
 ##
 ##    List of Source and Header Files.
 ##
 
-EXTRA_LIBRARY_SOURCE_FILES  =
-EXTRA_LIBRARY_HEADER_FILES  =
-EXTRA_NOINST_DATA_FILES     =
-EXTRA_NOINST_HEADER_FILES   =
+extra_library_source_files  =
+extra_library_header_files  =
+extra_noinst_data_files     =
+extra_noinst_header_files   =
 
-LIBRARY_SOURCE_FILES        =  \
+library_source_files        +=  \
         DocumentFile.cpp               \
         ScoreDocument.cpp              \
-        ${EXTRA_LIBRARY_SOURCE_FILES}
+        ${extra_library_source_files}
 
-LIBRARY_INSTANTIATIONS      =
-LIBRARY_INLINE_FILES        =
+library_instantiations      +=
+library_inline_files        +=
 
-DIST_NOINST_DATA_FILES      =  \
+dist_noinst_data_files      +=  \
         CMakeLists.txt              \
-        ${EXTRA_NOINST_DATA_FILES}
+        ${extra_noinst_data_files}
 
-DIST_NOINST_HEADER_FILES    =  \
-        ${EXTRA_NOINST_HEADER_FILES}
+dist_noinst_header_files    +=  \
+        ${extra_noinst_header_files}
 
-INCLIB_HEADER_FILES         =  \
-        ${INCLIB_SOURCE_DIR}/DocumentFile.h        \
-        ${INCLIB_SOURCE_DIR}/ScoreDocument.h       \
-        ${EXTRA_LIBRARY_HEADER_FILES}
+inclib_header_files         +=  \
+        ${inclib_source_dir}/DocumentFile.h        \
+        ${inclib_source_dir}/ScoreDocument.h       \
+        ${extra_library_header_files}
 
-INCLIB_NODIST_HEADER_FILES  =
+inclib_nodist_header_files  +=
 
-LIBRARY_INSTALL_SRCFILES    =  \
-        ${LIBRARY_INLINE_FILES}
+library_install_srcfiles    +=  \
+        ${library_inline_files}
 
-LIBRARY_COMPILE_SRCFILES    =  \
-        ${LIBRARY_SOURCE_FILES}    \
-        ${LIBRARY_INSTANTIATIONS}
+library_compile_srcfiles    +=  \
+        ${library_source_files}    \
+        ${library_instantiations}
 
 ##
 ##    List of Libraries.
 ##
 
-STATIC_LIBRARIES_LIST   =  libscore4Document.static.a
-SHARED_LIBRARIES_LIST   =
+static_libraries_list   =  libscore4Document.static.a
+shared_libraries_list   =
 
 ##
 ##    Internal Libraries.
@@ -74,11 +75,11 @@ AM_CXXFLAGS             =
 ##    Include Common Install Settings.
 ##
 
-include  $(top_srcdir)/.M4/Makefile.Install.inc
+include  $(top_srcdir)/.M4/BuildCommon/Install.inc
 
 ##
 ##    Build Libraries.
 ##
 
-libscore4Document_static_a_SOURCES  =  ${LIBRARY_SOURCE_FILES}
+libscore4Document_static_a_SOURCES  =  ${library_source_files}
 
