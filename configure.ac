@@ -16,10 +16,10 @@ dnl   パッケージの情報を指定する。
 dnl
 
 AC_INIT(
-    [Score4Core],
+    [BaseballScore],
     [0.0.0],
     [BUG-REPORT-ADDRESS],
-    [Score4Core])
+    [BaseballScore])
 
 dnl
 dnl   ツールの出力ディレクトリを指定する。
@@ -87,7 +87,7 @@ m4_include([.M4/ConfigDirectory.m4])
 MYAC_CUSTOMIZE_LIBRARY_DIR([Lib])
 MYAC_CUSTOMIZE_BINARY_DIR([Bin])
 MYAC_CUSTOMIZE_INCLUDE_DIR(
-    [Include], [Score4Core], [.Config], [Config.h])
+    [Include], [BaseballScore], [.Config], [Config.h])
 
 dnl----------------------------------------------------------------
 dnl
@@ -169,7 +169,7 @@ AC_CONFIG_FILES([
 ])
 
 AC_CONFIG_FILES([
-    Include/Score4Core/.Config/ConfiguredScore4Core.h
+    Include/BaseballScore/.Config/ConfiguredScore4Core.h
 ])
 
 dnl
