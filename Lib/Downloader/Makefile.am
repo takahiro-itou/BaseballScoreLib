@@ -69,5 +69,5 @@ include  $(top_srcdir)/.M4/BuildCommon/Install.inc
 ##    Build Libraries.
 ##
 
-libscore4Downloader_static_a_SOURCES    =  ${LIBRARY_SOURCE_FILES}
+libscore4Downloader_static_a_SOURCES    =  ${library_source_files}
 
