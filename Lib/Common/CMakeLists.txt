@@ -4,19 +4,17 @@
 ##    モジュールの設定。
 ##
 
-Set (MODULE_DIR_NAME       "Common")
-Set (MODULE_OUTPUT_NAME    "Common")
-Set (MODULE_TITLE          "Common")
+set(module_title        "Common")
 
-Set (INCLIB_SOURCE_DIR     "${INCLUDE_SOURCE_DIR}/${MODULE_DIR_NAME}")
-Set (INCLIB_BINARY_DIR     "${INCLUDE_BINARY_DIR}/${MODULE_DIR_NAME}")
+Include (${common_cmake_dir}/BuildCommon/ConfigModule.cmake)
+Include (${common_cmake_dir}/BuildCommon/ConfigTarget.cmake)
 
 ##----------------------------------------------------------------
 ##
 ##    ソースファイルとヘッダファイルのリスト。
 ##
 
-Set (LIBRARY_SOURCE_FILES
+set(library_source_files
         DateTimeFormat.cpp
         ErrorDetectionCode.cpp
         ProcessManager.cpp
@@ -24,18 +22,18 @@ Set (LIBRARY_SOURCE_FILES
         TextParser.cpp
 )
 
-Set (INCLIB_HEADER_FILES
-        ${INCLIB_SOURCE_DIR}/DateTimeFormat.h
-        ${INCLIB_SOURCE_DIR}/ErrorDetectionCode.h
-        ${INCLIB_SOURCE_DIR}/ProcessManager.h
-        ${INCLIB_SOURCE_DIR}/ProgressCallback.h
-        ${INCLIB_SOURCE_DIR}/Score4CoreSettings.h
-        ${INCLIB_SOURCE_DIR}/Score4Types.h
-        ${INCLIB_SOURCE_DIR}/ScoreInterface.h
-        ${INCLIB_SOURCE_DIR}/TextParser.h
+set(inclib_header_files
+        ${inclib_source_dir}/DateTimeFormat.h
+        ${inclib_source_dir}/ErrorDetectionCode.h
+        ${inclib_source_dir}/ProcessManager.h
+        ${inclib_source_dir}/ProgressCallback.h
+        ${inclib_source_dir}/Score4CoreSettings.h
+        ${inclib_source_dir}/Score4Types.h
+        ${inclib_source_dir}/ScoreInterface.h
+        ${inclib_source_dir}/TextParser.h
 )
 
-Set (MODULE_NEEDS_LIBRARIES
+set(module_needs_libraries
 )
 
 ##----------------------------------------------------------------
@@ -43,7 +41,8 @@ Set (MODULE_NEEDS_LIBRARIES
 ##    ビルドとインストールの設定。
 ##
 
-Include (${COMMON_CMAKE_DIR}/BuildLibraryCommon.cmake)
+Include (${common_cmake_dir}/BuildCommon/BuildLib.cmake)
+Include (${common_cmake_dir}/BuildCommon/Install.cmake)
 
 ##----------------------------------------------------------------
 ##

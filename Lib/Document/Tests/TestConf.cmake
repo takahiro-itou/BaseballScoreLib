@@ -4,11 +4,11 @@
 ##    テストの設定。
 ##
 
-Add_Test (NAME  DocumentFileTest
+add_test(NAME   DocumentFileTest
     COMMAND  $<TARGET_FILE:DocumentFileTest>
 )
 
-Add_Test (NAME  ScoreDocumentTest
+add_test(NAME   ScoreDocumentTest
     COMMAND  $<TARGET_FILE:ScoreDocumentTest>
 )
 
@@ -17,6 +17,6 @@ Add_Test (NAME  ScoreDocumentTest
 ##    テストプログラムのビルド。
 ##
 
-Add_Executable (DocumentFileTest        DocumentFileTest.cpp)
-Add_Executable (ScoreDocumentTest       ScoreDocumentTest.cpp)
+add_executable(DocumentFileTest         DocumentFileTest.cpp)
+add_executable(ScoreDocumentTest        ScoreDocumentTest.cpp)
 

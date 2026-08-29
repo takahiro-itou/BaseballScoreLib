@@ -4,23 +4,23 @@
 ##    テストの設定。
 ##
 
-Add_Test (NAME  DateTimeFormatTest
+add_test(NAME   DateTimeFormatTest
     COMMAND  $<TARGET_FILE:DateTimeFormatTest>
 )
 
-Add_Test (NAME  ErrorDetectionCodeTest
+add_test(NAME   ErrorDetectionCodeTest
     COMMAND  $<TARGET_FILE:ErrorDetectionCodeTest>
 )
 
-Add_Test (NAME  ProcessManagerTest
+add_test(NAME   ProcessManagerTest
     COMMAND  $<TARGET_FILE:ProcessManagerTest>
 )
 
-Add_Test (NAME  ProgressCallbackTest
+add_test(NAME   ProgressCallbackTest
     COMMAND  $<TARGET_FILE:ProgressCallbackTest>
 )
 
-Add_Test (NAME  Score4CoreSettingsTest
+add_test(NAME   Score4CoreSettingsTest
     COMMAND  $<TARGET_FILE:Score4CoreSettingsTest>
 )
 
@@ -29,9 +29,9 @@ Add_Test (NAME  Score4CoreSettingsTest
 ##    テストプログラムのビルド。
 ##
 
-Add_Executable (DateTimeFormatTest      DateTimeFormatTest.cpp)
-Add_Executable (ErrorDetectionCodeTest  ErrorDetectionCodeTest.cpp)
-Add_Executable (ProcessManagerTest      ProcessManagerTest.cpp)
-Add_Executable (ProgressCallbackTest    ProgressCallbackTest.cpp)
-Add_Executable (Score4CoreSettingsTest  Score4CoreSettingsTest.cpp)
+add_executable(DateTimeFormatTest       DateTimeFormatTest.cpp)
+add_executable(ErrorDetectionCodeTest   ErrorDetectionCodeTest.cpp)
+add_executable(ProcessManagerTest       ProcessManagerTest.cpp)
+add_executable(ProgressCallbackTest     ProgressCallbackTest.cpp)
+add_executable(Score4CoreSettingsTest   Score4CoreSettingsTest.cpp)
 

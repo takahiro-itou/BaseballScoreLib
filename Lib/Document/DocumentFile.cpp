@@ -1,13 +1,13 @@
-﻿//  -*-  coding: utf-8-with-signature-unix; mode: c++  -*-  //
+﻿//  -*-  coding: utf-8-with-signature;  mode: c++  -*-  //
 /*************************************************************************
 **                                                                      **
-**                  ---  The Score4 Core Library.  ---                  **
+**                  ---  Baseball  Score  Project  ---                  **
 **                                                                      **
-**          Copyright (C), 2017-2022, Takahiro Itou                     **
+**          Copyright (C), 2017-2026, Takahiro Itou                     **
 **          All Rights Reserved.                                        **
 **                                                                      **
-**          License: (See COPYING and LICENSE files)                    **
-**          GNU General Public License (GPL) version 3,                 **
+**          License: (See COPYING or LICENSE files)                     **
+**          GNU Affero General Public License (AGPL) version 3,         **
 **          or (at your option) any later version.                      **
 **                                                                      **
 *************************************************************************/
@@ -18,13 +18,13 @@
 **      @file       Document/DocumentFile.cpp
 **/
 
-#include    "Score4Core/Document/DocumentFile.h"
+#include    "BaseballScore/Document/DocumentFile.h"
 
-#include    "Score4Core/Document/ScoreDocument.h"
+#include    "BaseballScore/Document/ScoreDocument.h"
 
-#include    "Score4Core/Common/DateTimeFormat.h"
-#include    "Score4Core/Common/ErrorDetectionCode.h"
-#include    "Score4Core/Common/TextParser.h"
+#include    "BaseballScore/Common/DateTimeFormat.h"
+#include    "BaseballScore/Common/ErrorDetectionCode.h"
+#include    "BaseballScore/Common/TextParser.h"
 
 #include    <fcntl.h>
 #include    <fstream>
@@ -48,7 +48,8 @@
 
 #define     HELPER_UNUSED_VARIABLE(var)     (void)(var)
 
-SCORE4_CORE_NAMESPACE_BEGIN
+
+BASEBALLSCORE_NAMESPACE_BEGIN
 namespace  Document  {
 
 namespace  {
@@ -1193,4 +1194,4 @@ DocumentFile::writeSettingBlock(
 }
 
 }   //  End of namespace  Document
-SCORE4_CORE_NAMESPACE_END
+BASEBALLSCORE_NAMESPACE_END

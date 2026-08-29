@@ -1,13 +1,13 @@
-﻿//  -*-  coding: utf-8-with-signature-unix; mode: c++  -*-  //
+﻿//  -*-  coding: utf-8-with-signature;  mode: c++  -*-  //
 /*************************************************************************
 **                                                                      **
-**                  ---  The Score4 Core Library.  ---                  **
+**                  ---  Baseball  Score  Project  ---                  **
 **                                                                      **
-**          Copyright (C), 2017-2022, Takahiro Itou                     **
+**          Copyright (C), 2017-2026, Takahiro Itou                     **
 **          All Rights Reserved.                                        **
 **                                                                      **
-**          License: (See COPYING and LICENSE files)                    **
-**          GNU General Public License (GPL) version 3,                 **
+**          License: (See COPYING or LICENSE files)                     **
+**          GNU Affero General Public License (AGPL) version 3,         **
 **          or (at your option) any later version.                      **
 **                                                                      **
 *************************************************************************/
@@ -18,16 +18,17 @@
 **      @file       Document/ScoreDocument.h
 **/
 
-#if !defined( SCORE4CORE_DOCUMENT_INCLUDED_SCORE_DOCUMENT_H )
-#    define   SCORE4CORE_DOCUMENT_INCLUDED_SCORE_DOCUMENT_H
+#if !defined( BASEBALLSCORE_DOCUMENT_INCLUDED_SCORE_DOCUMENT_H )
+#    define   BASEBALLSCORE_DOCUMENT_INCLUDED_SCORE_DOCUMENT_H
 
-#include    "Score4Core/Common/Score4Types.h"
-#include    "Score4Core/Common/ScoreInterface.h"
+#include    "BaseballScore/Common/Score4Types.h"
+#include    "BaseballScore/Common/ScoreInterface.h"
 
 #include    <iosfwd>
 #include    <string>
 
-SCORE4_CORE_NAMESPACE_BEGIN
+
+BASEBALLSCORE_NAMESPACE_BEGIN
 namespace  Document  {
 
 //========================================================================
@@ -899,6 +900,6 @@ public:
 };
 
 }   //  End of namespace  Document
-SCORE4_CORE_NAMESPACE_END
+BASEBALLSCORE_NAMESPACE_END
 
 #endif

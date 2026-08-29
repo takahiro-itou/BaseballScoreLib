@@ -1,13 +1,13 @@
 ﻿//  -*-  coding: utf-8-with-signature;  mode: c++  -*-  //
 /*************************************************************************
 **                                                                      **
-**                  ---  The Score4 Core Library.  ---                  **
+**                  ---  Baseball  Score  Project  ---                  **
 **                                                                      **
-**          Copyright (C), 2017-2020, Takahiro Itou                     **
+**          Copyright (C), 2017-2026, Takahiro Itou                     **
 **          All Rights Reserved.                                        **
 **                                                                      **
-**          License: (See COPYING and LICENSE files)                    **
-**          GNU General Public License (GPL) version 3,                 **
+**          License: (See COPYING or LICENSE files)                     **
+**          GNU Affero General Public License (AGPL) version 3,         **
 **          or (at your option) any later version.                      **
 **                                                                      **
 *************************************************************************/
@@ -18,16 +18,18 @@
 **      @file       Bin/ScoreView.cpp
 **/
 
-#include    "Score4Core/Common/Score4CoreSettings.h"
+#include    "BaseballScore/Common/Score4CoreSettings.h"
 
-#include    "Score4Core/Common/ScoreInterface.h"
+#include    "BaseballScore/Common/ScoreInterface.h"
 
-#include    "Score4Core/Document/DocumentFile.h"
-#include    "Score4Core/Document/ScoreDocument.h"
+#include    "BaseballScore/Document/DocumentFile.h"
+#include    "BaseballScore/Document/ScoreDocument.h"
 
 #include    <iostream>
 
-using   namespace   SCORE4_CORE_NAMESPACE;
+
+using   namespace   BASEBALLSCORE_NAMESPACE;
+
 
 void  writeCountedScores(
         const   Common::CountedScores & cs,

@@ -1,13 +1,13 @@
 ﻿//  -*-  coding: utf-8-with-signature;  mode: c++  -*-  //
 /*************************************************************************
 **                                                                      **
-**                  ---  The Score4 Core Library.  ---                  **
+**                  ---  Baseball  Score  Project  ---                  **
 **                                                                      **
-**          Copyright (C), 2017-2020, Takahiro Itou                     **
+**          Copyright (C), 2017-2026, Takahiro Itou                     **
 **          All Rights Reserved.                                        **
 **                                                                      **
-**          License: (See COPYING and LICENSE files)                    **
-**          GNU General Public License (GPL) version 3,                 **
+**          License: (See COPYING or LICENSE files)                     **
+**          GNU Affero General Public License (AGPL) version 3,         **
 **          or (at your option) any later version.                      **
 **                                                                      **
 *************************************************************************/
@@ -19,9 +19,10 @@
 **/
 
 #include    "TestDriver.h"
-#include    "Score4Core/Downloader/HtmlDownloader.h"
+#include    "BaseballScore/Downloader/HtmlDownloader.h"
 
-SCORE4_CORE_NAMESPACE_BEGIN
+
+BASEBALLSCORE_NAMESPACE_BEGIN
 namespace  Downloader  {
 
 //========================================================================
@@ -62,7 +63,7 @@ void  HtmlDownloaderTest::testHtmlDownloader()
 
 
 }   //  End of namespace  Downloader
-SCORE4_CORE_NAMESPACE_END
+BASEBALLSCORE_NAMESPACE_END
 
 //========================================================================
 //

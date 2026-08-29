@@ -1,13 +1,13 @@
 ﻿//  -*-  coding: utf-8-with-signature;  mode: c++  -*-  //
 /*************************************************************************
 **                                                                      **
-**                  ---  The Score4 Core Library.  ---                  **
+**                  ---  Baseball  Score  Project  ---                  **
 **                                                                      **
-**          Copyright (C), 2017-2020, Takahiro Itou                     **
+**          Copyright (C), 2017-2026, Takahiro Itou                     **
 **          All Rights Reserved.                                        **
 **                                                                      **
-**          License: (See COPYING and LICENSE files)                    **
-**          GNU General Public License (GPL) version 3,                 **
+**          License: (See COPYING or LICENSE files)                     **
+**          GNU Affero General Public License (AGPL) version 3,         **
 **          or (at your option) any later version.                      **
 **                                                                      **
 *************************************************************************/
@@ -18,14 +18,16 @@
 **      @file       Common/Score4CoreSettings.h
 **/
 
-#if !defined( SCORE4CORE_COMMON_INCLUDED_SCORE4_CORE_SETTINGS_H )
-#    define   SCORE4CORE_COMMON_INCLUDED_SCORE4_CORE_SETTINGS_H
+#if !defined( BASEBALLSCORE_COMMON_INCLUDED_SCORE4_CORE_SETTINGS_H )
+#    define   BASEBALLSCORE_COMMON_INCLUDED_SCORE4_CORE_SETTINGS_H
 
 //  スクリプトによる設定値が書き込まれたヘッダを読み込む。  //
-#if defined( SCORE4_USE_PRE_CONFIGURED_MSVC )
-#    include    "Score4Core/.Config/PreConfigScore4Core.msvc.h"
+#if defined( BASEBALLSCORE_USE_PRE_CONFIGURED_MSVC )
+#    include    "BaseballScorer/.Config/PreConfigScore4Core.msvc.h"
+#elif defined( SCORE4_USE_PRE_CONFIGURED_MSVC )
+#    include    "BaseballScore/.Config/PreConfigScore4Core.msvc.h"
 #else
-#    include    "Score4Core/.Config/ConfiguredScore4Core.h"
+#    include    "BaseballScore/.Config/ConfiguredScore4Core.h"
 #endif
 
 SCORE4_CORE_NAMESPACE_BEGIN

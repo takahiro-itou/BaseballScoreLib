@@ -4,28 +4,26 @@
 ##    モジュールの設定。
 ##
 
-Set (MODULE_DIR_NAME       "Downloader")
-Set (MODULE_OUTPUT_NAME    "Downloader")
-Set (MODULE_TITLE          "Downloader")
+set(module_title        "Downloader")
 
-Set (INCLIB_SOURCE_DIR     "${INCLUDE_SOURCE_DIR}/${MODULE_DIR_NAME}")
-Set (INCLIB_BINARY_DIR     "${INCLUDE_BINARY_DIR}/${MODULE_DIR_NAME}")
+Include (${common_cmake_dir}/BuildCommon/ConfigModule.cmake)
+Include (${common_cmake_dir}/BuildCommon/ConfigTarget.cmake)
 
 ##----------------------------------------------------------------
 ##
 ##    ソースファイルとヘッダファイルのリスト。
 ##
 
-Set (LIBRARY_SOURCE_FILES
+set(library_source_files
         HtmlDownloader.cpp
 )
 
-Set (INCLIB_HEADER_FILES
-        ${INCLIB_SOURCE_DIR}/HtmlDownloader.h
+set(inclib_header_files
+        ${inclib_source_dir}/HtmlDownloader.h
 )
 
-Set (MODULE_NEEDS_LIBRARIES
-        ${PROJECT_NAME}-${LIBRARIES_TARGET_PREFIX}Common
+set(module_needs_libraries
+        ${project_target_prefix}Common
 )
 
 ##----------------------------------------------------------------
@@ -33,7 +31,8 @@ Set (MODULE_NEEDS_LIBRARIES
 ##    ビルドとインストールの設定。
 ##
 
-Include (${COMMON_CMAKE_DIR}/BuildLibraryCommon.cmake)
+Include (${common_cmake_dir}/BuildCommon/BuildLib.cmake)
+Include (${common_cmake_dir}/BuildCommon/Install.cmake)
 
 ##----------------------------------------------------------------
 ##

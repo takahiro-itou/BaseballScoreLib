@@ -1,13 +1,13 @@
-﻿//  -*-  coding: utf-8-with-signature-unix; mode: c++  -*-  //
+﻿//  -*-  coding: utf-8-with-signature;  mode: c++  -*-  //
 /*************************************************************************
 **                                                                      **
-**                  ---  The Score4 Core Library.  ---                  **
+**                  ---  Baseball  Score  Project  ---                  **
 **                                                                      **
-**          Copyright (C), 2017-2022, Takahiro Itou                     **
+**          Copyright (C), 2017-2026, Takahiro Itou                     **
 **          All Rights Reserved.                                        **
 **                                                                      **
-**          License: (See COPYING and LICENSE files)                    **
-**          GNU General Public License (GPL) version 3,                 **
+**          License: (See COPYING or LICENSE files)                     **
+**          GNU Affero General Public License (AGPL) version 3,         **
 **          or (at your option) any later version.                      **
 **                                                                      **
 *************************************************************************/
@@ -18,7 +18,9 @@
 **      @file       Document/ScoreDocument.cpp
 **/
 
-#include    "Score4Core/Document/ScoreDocument.h"
+#include    "BaseballScore/Pch/PreCompile.h"
+
+#include    "BaseballScore/Document/ScoreDocument.h"
 
 #include    <algorithm>
 #include    <memory.h>
@@ -26,7 +28,7 @@
 #include    <vector>
 
 
-SCORE4_CORE_NAMESPACE_BEGIN
+BASEBALLSCORE_NAMESPACE_BEGIN
 namespace  Document  {
 
 namespace  {
@@ -1721,4 +1723,4 @@ ScoreDocument::writeTeamMagicNumbers(
 
 
 }   //  End of namespace  Document
-SCORE4_CORE_NAMESPACE_END
+BASEBALLSCORE_NAMESPACE_END

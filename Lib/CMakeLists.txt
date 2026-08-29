@@ -4,13 +4,14 @@
 ##    プロジェクトの基本設定。
 ##
 
-Set (LIBRARIES_TARGET_PREFIX)
+set(libraries_target_prefix)
 
 ##----------------------------------------------------------------
 ##
 ##    サブディレクトリの追加。
 ##
 
+Add_SubDirectory (Pch)
 Add_SubDirectory (Tests)
 Add_SubDirectory (.Config)
 
