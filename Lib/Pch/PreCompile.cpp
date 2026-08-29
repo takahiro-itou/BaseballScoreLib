@@ -18,4 +18,4 @@
 **      @file       Pch/PreCompile.h
 **/
 
-#include    "Score4Core/Pch/PreCompile.h"
+#include    "BaseballScore/Pch/PreCompile.h"
