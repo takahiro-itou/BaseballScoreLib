@@ -87,13 +87,13 @@
     <ClCompile Include="Lib\Downloader\HtmlDownloader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Include\Score4Core\Common\DateTimeFormat.h" />
-    <ClInclude Include="Include\Score4Core\Common\ErrorDetectionCode.h" />
-    <ClInclude Include="Include\Score4Core\Common\Score4CoreSettings.h" />
-    <ClInclude Include="Include\Score4Core\Common\Score4Types.h" />
-    <ClInclude Include="Include\Score4Core\Document\DocumentFile.h" />
-    <ClInclude Include="Include\Score4Core\Document\ScoreDocument.h" />
-    <ClInclude Include="Include\Score4Core\Downloader\HtmlDownloader.h" />
+    <ClInclude Include="Include\BaseballScore\Common\DateTimeFormat.h" />
+    <ClInclude Include="Include\BaseballScore\Common\ErrorDetectionCode.h" />
+    <ClInclude Include="Include\BaseballScore\Common\Score4CoreSettings.h" />
+    <ClInclude Include="Include\BaseballScore\Common\Score4Types.h" />
+    <ClInclude Include="Include\BaseballScore\Document\DocumentFile.h" />
+    <ClInclude Include="Include\BaseballScore\Document\ScoreDocument.h" />
+    <ClInclude Include="Include\BaseballScore\Downloader\HtmlDownloader.h" />
   </ItemGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
