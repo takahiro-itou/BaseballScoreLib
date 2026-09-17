@@ -21,17 +21,10 @@
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <UseDebugLibraries>true</UseDebugLibraries>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
@@ -43,15 +36,10 @@
   </ImportGroup>
 
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"
+            Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')"
+            Label="LocalAppDataPlatform"
+     />
   </ImportGroup>
 
   <PropertyGroup Label="UserMacros">
@@ -87,13 +75,13 @@
     <ClCompile Include="Lib\Downloader\HtmlDownloader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Include\Score4Core\Common\DateTimeFormat.h" />
-    <ClInclude Include="Include\Score4Core\Common\ErrorDetectionCode.h" />
-    <ClInclude Include="Include\Score4Core\Common\Score4CoreSettings.h" />
-    <ClInclude Include="Include\Score4Core\Common\Score4Types.h" />
-    <ClInclude Include="Include\Score4Core\Document\DocumentFile.h" />
-    <ClInclude Include="Include\Score4Core\Document\ScoreDocument.h" />
-    <ClInclude Include="Include\Score4Core\Downloader\HtmlDownloader.h" />
+    <ClInclude Include="Include\BaseballScore\Common\BaseballScoreSettings.h" />
+    <ClInclude Include="Include\BaseballScore\Common\BaseballScoreTypes.h" />
+    <ClInclude Include="Include\BaseballScore\Common\DateTimeFormat.h" />
+    <ClInclude Include="Include\BaseballScore\Common\ErrorDetectionCode.h" />
+    <ClInclude Include="Include\BaseballScore\Document\DocumentFile.h" />
+    <ClInclude Include="Include\BaseballScore\Document\ScoreDocument.h" />
+    <ClInclude Include="Include\BaseballScore\Downloader\HtmlDownloader.h" />
   </ItemGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

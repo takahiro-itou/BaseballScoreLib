@@ -13,7 +13,7 @@ TESTS                   =  \
 ##    Test Configurations.
 ##
 
-target_testee_library       +=  -lscore4Document
+target_testee_library       +=  -lbscDocument
 
 dist_noinst_data_files      +=
 dist_noinst_header_files    +=

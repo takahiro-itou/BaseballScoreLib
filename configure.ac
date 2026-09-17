@@ -17,7 +17,7 @@ dnl
 
 AC_INIT(
     [BaseballScore],
-    [0.0.0],
+    [1.0.0],
     [BUG-REPORT-ADDRESS],
     [BaseballScore])
 
@@ -58,8 +58,8 @@ dnl
 dnl   Project Name Space.
 dnl
 
-SCORE4CORE_CNF_NAMESPACE=Score4Core
-AC_SUBST(SCORE4CORE_CNF_NAMESPACE)
+BASEBALLSCORE_CNF_NAMESPACE=BaseballScore
+AC_SUBST(BASEBALLSCORE_CNF_NAMESPACE)
 
 
 dnl ----------------------------------------------------------------
@@ -165,7 +165,7 @@ AC_CONFIG_FILES([
 ])
 
 AC_CONFIG_FILES([
-    Include/BaseballScore/.Config/ConfiguredScore4Core.h
+    Include/BaseballScore/.Config/ConfiguredBaseballScore.h
 ])
 
 dnl

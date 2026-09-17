@@ -18,7 +18,7 @@ set(library_source_files
 )
 
 set(inclib_header_files
-        ${inclib_binary_dir}/ConfiguredScore4Core.h
+        ${inclib_binary_dir}/ConfiguredBaseballScore.h
 )
 
 set(module_needs_libraries

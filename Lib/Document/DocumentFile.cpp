@@ -18,6 +18,8 @@
 **      @file       Document/DocumentFile.cpp
 **/
 
+#include    "BaseballScore/Pch/PreCompile.h"
+
 #include    "BaseballScore/Document/DocumentFile.h"
 
 #include    "BaseballScore/Document/ScoreDocument.h"
