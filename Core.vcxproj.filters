@@ -42,16 +42,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Include\BaseballScore\Common\BaseballScoreSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BaseballScore\Common\BaseballScoreTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Include\BaseballScore\Common\DateTimeFormat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Include\BaseballScore\Common\ErrorDetectionCode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\BaseballScore\Common\Score4CoreSettings.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\BaseballScore\Common\Score4Types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Include\BaseballScore\Document\DocumentFile.h">

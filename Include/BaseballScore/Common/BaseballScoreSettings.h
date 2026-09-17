@@ -24,8 +24,6 @@
 //  スクリプトによる設定値が書き込まれたヘッダを読み込む。  //
 #if defined( BASEBALLSCORE_USE_PRE_CONFIGURED_MSVC )
 #    include    "BaseballScore/.Config/PreConfigBaseballScore.msvc.h"
-#elif defined( SCORE4_USE_PRE_CONFIGURED_MSVC )
-#    include    "BaseballScore/.Config/PreConfigBaseballScore.msvc.h"
 #else
 #    include    "BaseballScore/.Config/ConfiguredBaseballScore.h"
 #endif
