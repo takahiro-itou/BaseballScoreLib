@@ -27,7 +27,7 @@ set(inclib_header_files
         ${inclib_source_dir}/ErrorDetectionCode.h
         ${inclib_source_dir}/ProcessManager.h
         ${inclib_source_dir}/ProgressCallback.h
-        ${inclib_source_dir}/Score4CoreSettings.h
+        ${inclib_source_dir}/BaseballScoreSettings.h
         ${inclib_source_dir}/Score4Types.h
         ${inclib_source_dir}/ScoreInterface.h
         ${inclib_source_dir}/TextParser.h

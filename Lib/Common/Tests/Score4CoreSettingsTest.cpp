@@ -13,28 +13,28 @@
 *************************************************************************/
 
 /**
-**      An Implementation of Test Case 'Score4CoreSettings'.
+**      An Implementation of Test Case 'BaseballScoreSettings'.
 **
-**      @file       Common/Tests/Score4CoreSettingsTest.cpp
+**      @file       Common/Tests/BaseballScoreSettingsTest.cpp
 **/
 
 #include    "TestDriver.h"
-#include    "BaseballScore/Common/Score4CoreSettings.h"
+#include    "BaseballScore/Common/BaseballScoreSettings.h"
 
 
 BASEBALLSCORE_NAMESPACE_BEGIN
 
 //========================================================================
 //
-//    Score4CoreSettingsTest  class.
+//    BaseballScoreSettingsTest  class.
 //
 /**
-**    クラス Score4CoreSettings の単体テスト。
+**    クラス BaseballScoreSettings の単体テスト。
 **/
 
-class  Score4CoreSettingsTest : public  TestFixture
+class  BaseballScoreSettingsTest : public  TestFixture
 {
-    CPPUNIT_TEST_SUITE(Score4CoreSettingsTest);
+    CPPUNIT_TEST_SUITE(BaseballScoreSettingsTest);
     CPPUNIT_TEST(testNameSpace);
     CPPUNIT_TEST_SUITE_END();
 
@@ -46,14 +46,14 @@ private:
     void  testNameSpace();
 };
 
-CPPUNIT_TEST_SUITE_REGISTRATION( Score4CoreSettingsTest );
+CPPUNIT_TEST_SUITE_REGISTRATION( BaseballScoreSettingsTest );
 
 //========================================================================
 //
 //    Tests.
 //
 
-void  Score4CoreSettingsTest::testNameSpace()
+void  BaseballScoreSettingsTest::testNameSpace()
 {
     return;
 }

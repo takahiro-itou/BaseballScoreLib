@@ -18,7 +18,7 @@
 **      @file       Bin/ImportTool.cpp
 **/
 
-#include    "BaseballScore/Common/Score4CoreSettings.h"
+#include    "BaseballScore/Common/BaseballScoreSettings.h"
 
 #include    "BaseballScore/Common/ScoreInterface.h"
 
