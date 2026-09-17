@@ -40,14 +40,14 @@ dist_noinst_header_files    +=  \
         ${extra_noinst_header_files}
 
 inclib_header_files         +=  \
-        ${inclib_source_dir}/DateTimeFormat.h      \
-        ${inclib_source_dir}/ErrorDetectionCode.h  \
-        ${inclib_source_dir}/ProcessManager.h      \
-        ${inclib_source_dir}/ProgressCallback.h    \
-        ${inclib_source_dir}/Score4CoreSettings.h  \
-        ${inclib_source_dir}/Score4Types.h         \
-        ${inclib_source_dir}/ScoreInterface.h      \
-        ${inclib_source_dir}/TextParser.h          \
+        ${inclib_source_dir}/BaseballScoreSettings.h    \
+        ${inclib_source_dir}/BaseballScoreTypes.h       \
+        ${inclib_source_dir}/DateTimeFormat.h           \
+        ${inclib_source_dir}/ErrorDetectionCode.h       \
+        ${inclib_source_dir}/ProcessManager.h           \
+        ${inclib_source_dir}/ProgressCallback.h         \
+        ${inclib_source_dir}/ScoreInterface.h           \
+        ${inclib_source_dir}/TextParser.h               \
         ${extra_library_header_files}
 
 inclib_nodist_header_files  +=
@@ -63,7 +63,7 @@ library_compile_srcfiles    +=  \
 ##    List of Libraries.
 ##
 
-static_libraries_list   +=  libscore4Common.static.a
+static_libraries_list   +=  libbscCommon.static.a
 shared_libraries_list   +=
 
 ##
@@ -80,5 +80,5 @@ include  $(top_srcdir)/.M4/BuildCommon/Install.inc
 ##    Build Libraries.
 ##
 
-libscore4Common_static_a_SOURCES    =  ${library_source_files}
+libbscCommon_static_a_SOURCES   =  ${library_source_files}
 

@@ -16,9 +16,9 @@ cmake_minimum_required(VERSION  3.0.2)
 ##
 
 set(project_name        BaseballScore)
-set(serial              "0.0.0")
+set(serial              "1.0.0")
 
-project(${project_name}     VERSION  1.0.0)
+project(${project_name}     VERSION  ${serial})
 
 
 ##
@@ -49,7 +49,7 @@ Include (${common_cmake_dir}/DefaultBuildOptions.cmake)
 ##    Project Name Space.
 ##
 
-set(SCORE4CORE_CNF_NAMESPACE    Score4Core)
+set(BASEBALLSCORE_CNF_NAMESPACE     BaseballScore)
 
 
 ##----------------------------------------------------------------
@@ -117,8 +117,8 @@ Find_Package (CppUnit)
 ##
 
 configure_file(
-    "${incpkg_source_dir}/.Config/ConfiguredScore4Core.h.in"
-    "${incpkg_binary_dir}/.Config/ConfiguredScore4Core.h"
+    "${incpkg_source_dir}/.Config/ConfiguredBaseballScore.h.in"
+    "${incpkg_binary_dir}/.Config/ConfiguredBaseballScore.h"
 )
 
 configure_file(

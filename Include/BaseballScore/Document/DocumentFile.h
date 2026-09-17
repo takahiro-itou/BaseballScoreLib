@@ -21,9 +21,13 @@
 #if !defined( BASEBALLSCORE_DOCUMENT_INCLUDED_DOCUMENT_FILE_H )
 #    define   BASEBALLSCORE_DOCUMENT_INCLUDED_DOCUMENT_FILE_H
 
-#include    "BaseballScore/Common/Score4Types.h"
-#include    "BaseballScore/Common/ScoreInterface.h"
+#if !defined( BASEBALLSCORE_PCH_INCLUDED_PRE_COMPILE_H )
+#    include    "BaseballScore/Pch/PreCompile.h"
+#endif
 
+#if !defined( BASEBALLSCORE_COMMON_INCLUDED_SCORE_INTERFACE_H )
+#    include    "BaseballScore/Common/ScoreInterface.h"
+#endif
 #include    <iosfwd>
 #include    <string>
 

@@ -29,7 +29,7 @@
 
 
 #if !defined( BASEBALLSCORE_COMMON_INCLUDED_BASEBALL_SCORE_TYPES_H )
-#    include    "BaseballScore/Common/Score4Types.h"
+#    include    "BaseballScore/Common/BaseballScoreTypes.h"
 #endif
 
 

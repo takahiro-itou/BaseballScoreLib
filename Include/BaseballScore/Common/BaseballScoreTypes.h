@@ -15,13 +15,13 @@
 /**
 **      Type Definitions.
 **
-**      @file       Common/Score4Types.h
+**      @file       Common/BaseballScoreTypes.h
 **/
 
 #if !defined( BASEBALLSCORE_COMMON_INCLUDED_BASEBALL_SCORE_TYPES_H )
 #    define   BASEBALLSCORE_COMMON_INCLUDED_BASEBALL_SCORE_TYPES_H
 
-#include    "Score4CoreSettings.h"
+#include    "BaseballScoreSettings.h"
 
 #include    <stddef.h>
 
