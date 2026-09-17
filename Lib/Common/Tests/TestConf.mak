@@ -5,11 +5,11 @@
 
 extra_tests             =
 TESTS                   =  \
-        DateTimeFormatTest      \
-        ErrorDetectionCodeTest  \
-        ProcessManagerTest      \
-        ProgressCallbackTest    \
-        Score4CoreSettingsTest  \
+        BaseballScoreSettingsTest   \
+        DateTimeFormatTest          \
+        ErrorDetectionCodeTest      \
+        ProcessManagerTest          \
+        ProgressCallbackTest        \
         ${extra_tests}
 
 ##
@@ -35,9 +35,9 @@ test_ldflags_common         +=
 ##    Test Programs.
 ##
 
-DateTimeFormatTest_SOURCES      =  DateTimeFormatTest.cpp
-ErrorDetectionCodeTest_SOURCES  =  ErrorDetectionCodeTest.cpp
-ProcessManagerTest_SOURCES      =  ProcessManagerTest.cpp
-ProgressCallbackTest_SOURCES    =  ProgressCallbackTest.cpp
-Score4CoreSettingsTest_SOURCES  =  Score4CoreSettingsTest.cpp
+BaseballScoreSettingsTest_SOURCES   =  BaseballScoreSettingsTest.cpp
+DateTimeFormatTest_SOURCES          =  DateTimeFormatTest.cpp
+ErrorDetectionCodeTest_SOURCES      =  ErrorDetectionCodeTest.cpp
+ProcessManagerTest_SOURCES          =  ProcessManagerTest.cpp
+ProgressCallbackTest_SOURCES        =  ProgressCallbackTest.cpp
 

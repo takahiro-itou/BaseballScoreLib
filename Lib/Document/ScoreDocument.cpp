@@ -1010,7 +1010,7 @@ ScoreDocument::makeDigitsList(
             std::unique(workRate.begin(), workRate.end()),
             workRate.end());
 
-    const   size_t  numUniq = workRate.size();
+    //  const   size_t  numUniq = workRate.size();
     maxNumDigit = makeDigitsFromUnique(workRate, workDigits);
 
     NumOfDigits retVal;
