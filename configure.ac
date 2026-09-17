@@ -58,8 +58,8 @@ dnl
 dnl   Project Name Space.
 dnl
 
-SCORE4CORE_CNF_NAMESPACE=Score4Core
-AC_SUBST(SCORE4CORE_CNF_NAMESPACE)
+BASEBALLSCORE_CNF_NAMESPACE=BaseballScore
+AC_SUBST(BASEBALLSCORE_CNF_NAMESPACE)
 
 
 dnl ----------------------------------------------------------------

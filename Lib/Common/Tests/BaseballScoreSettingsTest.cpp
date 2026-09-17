@@ -58,7 +58,7 @@ void  BaseballScoreSettingsTest::testNameSpace()
     return;
 }
 
-SCORE4_CORE_NAMESPACE_END
+BASEBALLSCORE_NAMESPACE_END
 
 //========================================================================
 //

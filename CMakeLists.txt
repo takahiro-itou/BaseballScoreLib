@@ -49,7 +49,7 @@ Include (${common_cmake_dir}/DefaultBuildOptions.cmake)
 ##    Project Name Space.
 ##
 
-set(SCORE4CORE_CNF_NAMESPACE    Score4Core)
+set(BASEBALLSCORE_CNF_NAMESPACE     BaseballScore)
 
 
 ##----------------------------------------------------------------

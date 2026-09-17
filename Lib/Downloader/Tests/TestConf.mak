@@ -12,7 +12,7 @@ TESTS                   =  \
 ##    Test Configurations.
 ##
 
-target_testee_library       +=  -lscore4Downloader
+target_testee_library       +=  -lbscDownloader
 
 dist_noinst_data_files      +=
 dist_noinst_header_files    +=

@@ -63,7 +63,7 @@ library_compile_srcfiles    +=  \
 ##    List of Libraries.
 ##
 
-static_libraries_list   +=  libscore4Common.static.a
+static_libraries_list   +=  libbscCommon.static.a
 shared_libraries_list   +=
 
 ##
@@ -80,5 +80,5 @@ include  $(top_srcdir)/.M4/BuildCommon/Install.inc
 ##    Build Libraries.
 ##
 
-libscore4Common_static_a_SOURCES    =  ${library_source_files}
+libbscCommon_static_a_SOURCES   =  ${library_source_files}
 

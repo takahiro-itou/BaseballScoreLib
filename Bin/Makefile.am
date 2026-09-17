@@ -46,8 +46,8 @@ dist_noinst_DATA        =  \
 ##
 
 ImportTool_SOURCES      =  ImportTool.cpp
-ImportTool_LDADD        =  -lscore4Document
+ImportTool_LDADD        =  -lbscDocument
 
 ScoreViewer_SOURCES     =  ScoreViewer.cpp
-ScoreViewer_LDADD       =  -lscore4Document
+ScoreViewer_LDADD       =  -lbscDocument
 

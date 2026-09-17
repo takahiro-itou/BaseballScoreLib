@@ -28,7 +28,7 @@
 #include    <fstream>
 #include    <iostream>
 
-using   namespace   SCORE4_CORE_NAMESPACE;
+using   namespace   BASEBALLSCORE_NAMESPACE;
 
 void  writeCountedScores(
         const   Common::CountedScores & cs,
