@@ -18,8 +18,8 @@
 **      @file       .Config/ConfiguredScore4Core.h.in
 **/
 
-#if !defined( BASEBALLSCORE_CONFIG_INCLUDED_CONFIGURED_SCORE4_CORE_H )
-#    define   BASEBALLSCORE_CONFIG_INCLUDED_CONFIGURED_SCORE4_CORE_H
+#if !defined( BASEBALLSCORE_CONFIG_INCLUDED_CONFIGURED_BASEBALL_SCORE_H )
+#    define   BASEBALLSCORE_CONFIG_INCLUDED_CONFIGURED_BASEBALL_SCORE_H
 
 //========================================================================
 //
