@@ -117,8 +117,8 @@ Find_Package (CppUnit)
 ##
 
 configure_file(
-    "${incpkg_source_dir}/.Config/ConfiguredScore4Core.h.in"
-    "${incpkg_binary_dir}/.Config/ConfiguredScore4Core.h"
+    "${incpkg_source_dir}/.Config/ConfiguredBaseballScore.h.in"
+    "${incpkg_binary_dir}/.Config/ConfiguredBaseballScore.h"
 )
 
 configure_file(

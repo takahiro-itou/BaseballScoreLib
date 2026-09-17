@@ -165,7 +165,7 @@ AC_CONFIG_FILES([
 ])
 
 AC_CONFIG_FILES([
-    Include/BaseballScore/.Config/ConfiguredScore4Core.h
+    Include/BaseballScore/.Config/ConfiguredBaseballScore.h
 ])
 
 dnl
