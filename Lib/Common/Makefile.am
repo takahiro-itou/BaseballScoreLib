@@ -40,12 +40,12 @@ dist_noinst_header_files    +=  \
         ${extra_noinst_header_files}
 
 inclib_header_files         +=  \
+        ${inclib_source_dir}/BaseballScoreSettings.h    \
+        ${inclib_source_dir}/BaseballScoreTypes.h       \
         ${inclib_source_dir}/DateTimeFormat.h           \
         ${inclib_source_dir}/ErrorDetectionCode.h       \
         ${inclib_source_dir}/ProcessManager.h           \
         ${inclib_source_dir}/ProgressCallback.h         \
-        ${inclib_source_dir}/BaseballScoreSettings.h    \
-        ${inclib_source_dir}/Score4Types.h              \
         ${inclib_source_dir}/ScoreInterface.h           \
         ${inclib_source_dir}/TextParser.h               \
         ${extra_library_header_files}

@@ -16,9 +16,9 @@ cmake_minimum_required(VERSION  3.0.2)
 ##
 
 set(project_name        BaseballScore)
-set(serial              "0.0.0")
+set(serial              "1.0.0")
 
-project(${project_name}     VERSION  1.0.0)
+project(${project_name}     VERSION  ${serial})
 
 
 ##

@@ -17,7 +17,7 @@ dnl
 
 AC_INIT(
     [BaseballScore],
-    [0.0.0],
+    [1.0.0],
     [BUG-REPORT-ADDRESS],
     [BaseballScore])
 
