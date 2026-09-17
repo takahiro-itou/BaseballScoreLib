@@ -25,8 +25,15 @@
 #    include    "BaseballScore/Pch/PreCompile.h"
 #endif
 
-#include    <iosfwd>
-#include    <string>
+#if !defined( BASEBALLSCORE_SYS_STL_INCLUDED_IOSFWD )
+#    include    <iosfwd>
+#    define   BASEBALLSCORE_SYS_STL_INCLUDED_IOSFWD
+#endif
+
+#if !defined( BASEBALLSCORE_SYS_STL_INCLUDED_STRING )
+#    include    <string>
+#    define   BASEBALLSCORE_SYS_STL_INCLUDED_STRING
+#endif
 
 
 BASEBALLSCORE_NAMESPACE_BEGIN

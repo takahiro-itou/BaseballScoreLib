@@ -25,9 +25,20 @@
 #    include    "BaseballScore/Pch/PreCompile.h"
 #endif
 
-#include    <array>
-#include    <string>
-#include    <vector>
+#if !defined( BASEBALLSCORE_SYS_STL_INCLUDED_ARRAY )
+#    include    <array>
+#    define   BASEBALLSCORE_SYS_STL_INCLUDED_ARRAY
+#endif
+
+#if !defined( BASEBALLSCORE_SYS_STL_INCLUDED_STRING )
+#    include    <string>
+#    define   BASEBALLSCORE_SYS_STL_INCLUDED_STRING
+#endif
+
+#if !defined( BASEBALLSCORE_SYS_STL_INCLUDED_VECTOR )
+#    include    <vector>
+#    define   BASEBALLSCORE_SYS_STL_INCLUDED_VECTOR
+#endif
 
 
 BASEBALLSCORE_NAMESPACE_BEGIN
