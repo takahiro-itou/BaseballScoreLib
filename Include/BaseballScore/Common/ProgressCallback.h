@@ -1,13 +1,13 @@
 ﻿//  -*-  coding: utf-8-with-signature;  mode: c++  -*-  //
 /*************************************************************************
 **                                                                      **
-**                  ---  The Score4 Core Library.  ---                  **
+**                  ---  Baseball  Score  Project  ---                  **
 **                                                                      **
-**          Copyright (C), 2017-2020, Takahiro Itou                     **
+**          Copyright (C), 2017-2026, Takahiro Itou                     **
 **          All Rights Reserved.                                        **
 **                                                                      **
-**          License: (See COPYING and LICENSE files)                    **
-**          GNU General Public License (GPL) version 3,                 **
+**          License: (See COPYING or LICENSE files)                     **
+**          GNU Affero General Public License (AGPL) version 3,         **
 **          or (at your option) any later version.                      **
 **                                                                      **
 *************************************************************************/
@@ -18,12 +18,15 @@
 **      @file       Common/ProgressCallback.h
 **/
 
-#if !defined( SCORE4CORE_COMMON_INCLUDED_PROGRESS_CALLBACK_H )
-#    define   SCORE4CORE_COMMON_INCLUDED_PROGRESS_CALLBACK_H
+#if !defined( BASEBALLSCORE_COMMON_INCLUDED_PROGRESS_CALLBACK_H )
+#    define   BASEBALLSCORE_COMMON_INCLUDED_PROGRESS_CALLBACK_H
 
-#include    "Score4Types.h"
+#if !defined( BASEBALLSCORE_PCH_INCLUDED_PRE_COMPILE_H )
+#    include    "BaseballScore/Pch/PreCompile.h"
+#endif
 
-SCORE4_CORE_NAMESPACE_BEGIN
+
+BASEBALLSCORE_NAMESPACE_BEGIN
 namespace  Common  {
 
 //========================================================================
@@ -220,12 +223,16 @@ private:
 //
 //    Other Features.
 //
+private:
+    typedef     ProgressCallback    This;
+    ProgressCallback    (const  This  &);
+    This &  operator =  (const  This  &);
 public:
     //  テストクラス。  //
     friend  class   ProgressCallbackTest;
 };
 
 }   //  End of namespace  Common
-SCORE4_CORE_NAMESPACE_END
+BASEBALLSCORE_NAMESPACE_END
 
 #endif
