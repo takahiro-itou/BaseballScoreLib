@@ -15,7 +15,7 @@
 /**
 **      プロジェクトの設定。
 **
-**      @file       Common/Score4CoreSettings.h
+**      @file       Common/BaseballScoreSettings.h
 **/
 
 #if !defined( BASEBALLSCORE_COMMON_INCLUDED_BASEBALL_SCORE_SETTINGS_H )

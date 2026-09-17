@@ -1,13 +1,13 @@
-﻿//  -*-  coding: utf-8-with-signature-unix; mode: c++  -*-  //
+﻿//  -*-  coding: utf-8-with-signature;  mode: c++  -*-  //
 /*************************************************************************
 **                                                                      **
-**                  ---  The Score4 Core Library.  ---                  **
+**                  ---  Baseball  Score  Project  ---                  **
 **                                                                      **
-**          Copyright (C), 2017-2022, Takahiro Itou                     **
+**          Copyright (C), 2017-2026, Takahiro Itou                     **
 **          All Rights Reserved.                                        **
 **                                                                      **
-**          License: (See COPYING and LICENSE files)                    **
-**          GNU General Public License (GPL) version 3,                 **
+**          License: (See COPYING or LICENSE files)                     **
+**          GNU Affero General Public License (AGPL) version 3,         **
 **          or (at your option) any later version.                      **
 **                                                                      **
 *************************************************************************/
@@ -18,16 +18,19 @@
 **      @file       Common/ScoreInterface.h
 **/
 
-#if !defined( SCORE4CORE_COMMON_INCLUDED_SCORE_INTERFACE_H )
-#    define   SCORE4CORE_COMMON_INCLUDED_SCORE_INTERFACE_H
+#if !defined( BASEBALLSCORE_COMMON_INCLUDED_SCORE_INTERFACE_H )
+#    define   BASEBALLSCORE_COMMON_INCLUDED_SCORE_INTERFACE_H
 
-#include    "Score4Types.h"
+#if !defined( BASEBALLSCORE_PCH_INCLUDED_PRE_COMPILE_H )
+#    include    "BaseballScore/Pch/PreCompile.h"
+#endif
 
 #include    <array>
 #include    <string>
 #include    <vector>
 
-SCORE4_CORE_NAMESPACE_BEGIN
+
+BASEBALLSCORE_NAMESPACE_BEGIN
 namespace  Common  {
 
 //========================================================================
@@ -248,6 +251,6 @@ CONSTEXPR_VAR   GamesCount  MAGIC_NO_PROBABILITY_WONS   = 99999999;
 CONSTEXPR_VAR   GamesCount  MAGICLIST_NO_DATA_ENTRY     = -1;
 
 }   //  End of namespace  Common
-SCORE4_CORE_NAMESPACE_END
+BASEBALLSCORE_NAMESPACE_END
 
 #endif
