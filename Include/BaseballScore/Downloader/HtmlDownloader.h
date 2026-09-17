@@ -21,7 +21,9 @@
 #if !defined( BASEBALLSCORE_DOWNLOADER_INCLUDED_HTML_DOWNLOADER_H )
 #    define   BASEBALLSCORE_DOWNLOADER_INCLUDED_HTML_DOWNLOADER_H
 
-#include    "BaseballScore/Common/Score4Types.h"
+#if !defined( BASEBALLSCORE_PCH_INCLUDED_PRE_COMPILE_H )
+#    include    "BaseballScore/Pch/PreCompile.h"
+#endif
 
 
 BASEBALLSCORE_NAMESPACE_BEGIN
